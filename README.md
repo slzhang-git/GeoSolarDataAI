@@ -1,0 +1,1 @@
+We release an open API from this work. Particularly, for any user‑specified building location, our API automatically retrieves the corresponding satellite imagery, detects rooftop solar panels, and returns georeferenced panel polygons.
