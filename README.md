@@ -10,14 +10,30 @@ We show an example of solar panel detection for a single building in the city of
 **Below is a python programming example for using our API in Google Colab environment:**
 
 ```python
-!pip install cenergy
+import requests
 
-from cenergy3 import generate_3d_model, plot_3d_model, save_3d_model
+api_key = '123456789' # Replace with your actual API key. Please contact the author of the API (shiliangz@ieee.org) to request a valid API key with your institutional email address
+latitude = 47.3902015 # An example of the location you are interested in
+longitude = 8.5193411
 
-api_key = "123456789123456789123456789" # please change to your own OpenTopography API key, which is free can can be obtained from http://opentopography.org/
-target_place = "Rousay-Orkney Islands-Scotland" # You can change to the name of the place you want
+BASE_URL = "https://geosolar-production.up.railway.app" # This is where we deployed our API, please do not change it
+api_endpoint_url = f"{BASE_URL}/{api_key}/{latitude}/{longitude}"  # Construct the full API endpoint URL
 
-fig_json = generate_3d_model(api_key=api_key, target_place=target_place)
-plot_3d_model(fig_json)
-save_3d_model(fig_json)
+
+# Fetch Data from our API
+print(f"Fetching data from: {api_endpoint_url}")
+try:
+    response = requests.get(api_endpoint_url)
+    response.raise_for_status() # Check for 4xx/5xx errors
+
+    html = response.text
+    # Below we save the response data to a file and open in a browser
+    with open("map.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Saved map.html")
+
+except requests.exceptions.RequestException as e:
+    print(f"Error fetching data: {e}")
+    # Exit or handle the error gracefully
+    exit()
 ```
