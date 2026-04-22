@@ -6,6 +6,7 @@ We show an example of solar panel detection for a single building in the city of
 
 <img width="1378" height="1067" alt="example" src="https://github.com/user-attachments/assets/7ea129ba-98c3-49d7-9ae2-831c698558b0" />
 
+<br><br/>
 
 **Below is a python programming example for using our API in Google Colab environment:**
 
