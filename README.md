@@ -19,7 +19,7 @@ api_key = '123456789' # Replace with your actual API key. Please contact the aut
 latitude = 47.3902015 # An example of the location you are interested in
 longitude = 8.5193411
 
-BASE_URL = "https://geosolar-production.up.railway.app" # This is where we deployed our API, please do not change it
+BASE_URL = "https://geosolar-geodataai.up.railway.app" # This is where we deployed our API, please do not change it # 
 api_endpoint_url = f"{BASE_URL}/{api_key}/{latitude}/{longitude}"  # Construct the full API endpoint URL
 
 
