@@ -8,6 +8,8 @@ We show an example of solar panel detection for a single building in the city of
 
 <br><br/>
 
+# Software and demonstration
+
 **Below is a python programming example for using our API in Google Colab environment:**
 
 Note that you need to contact the API author to get a valid API key to use our API.
