@@ -1,6 +1,6 @@
 import requests
 
-api_key = '123456789' # Replace with your actual API key. Please contact the author of the API (shiliangz@ieee.org) to request a valid API key with your institutional email address
+api_key = '123456789' # Replace with your actual API key. Please contact the author of the API (shilianz@ifi.uio.no) to request a valid API key with your institutional email address
 latitude = 47.3902015 # An example of the location you are interested in
 longitude = 8.5193411
 
