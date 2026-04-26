@@ -47,8 +47,9 @@ This area is of 7,007,187.59 square meters in total, with 284 buildings, and the
 
 <img width="1191" height="991" alt="Cleaned_berg_Switzerland" src="https://github.com/user-attachments/assets/c364a91a-1080-460a-929f-5c78cf3ac040" />
 
-<img width="1197" height="997" alt="Cleaned_berg_Switzerland_white" src="https://github.com/user-attachments/assets/ef22c562-6829-4182-9f63-54a66a9f4ced" />
+**Below is the demonstration of our solar panel detection for the area of Bülach, Switzerland** 
 
+This area is of 16,078,514.69 square meters in total, with 2,828 buildings, and the area covered by buildings is 872,602.83 square meters. We run the solar detection first, and then we go through a minor mannual cleaning for the detected result to avoid the visualization of detection errors through [geojson.io](https://geojson.io). The detected solar panels are visualized below, with the visualization in an [interactive map here](https://slzhang-git.github.io/GeoSolarDataAI/City_town_level_detection/Cleaned_Berg_Switzerland20260424.html)
 
 
 
